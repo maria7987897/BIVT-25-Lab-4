@@ -16,12 +16,12 @@ namespace Lab4
             length = Math.Sqrt(length);
             // end
 
-            return length; // Добавлен return
+            return length; 
         }
 
         public int Task2(int[] array, int P, int Q)
         {
-            int count = 0; // Добавлена фигурная скобка
+            int count = 0; 
             // code here
             int amin = Math.Min(Q, P);
             int amax = Math.Max(Q, P);
@@ -86,7 +86,7 @@ namespace Lab4
 
         public int Task5(int[] array, int P)
         {
-            int index = 0; // Добавлена фигурная скобка
+            int index = 0; 
 
             // code here
 
@@ -133,7 +133,7 @@ namespace Lab4
 
         public int[] Task7(int[] array)
         {
-            int[] answer = null; // Добавлена фигурная скобка
+            int[] answer = null; 
             // code here
             if (array != null)
             {
@@ -157,7 +157,7 @@ namespace Lab4
             }
             // end
 
-            return answer; // Добавлен return
+            return answer; 
         }
 
         public void Task8(int[] array)
@@ -196,7 +196,7 @@ namespace Lab4
 
         public int[] Task10(int[] A, int[] B)
         {
-            int[] C = null; // Добавлена фигурная скобка
+            int[] C = null; 
             // code here
             if (A == null && B == null)
             {
@@ -256,7 +256,7 @@ namespace Lab4
 
         public double[] Task11(double a, double b, int n)
         {
-            double[] array = null; // Добавлена фигурная скобка
+            double[] array = null; 
             // code here
             if (n == 1 && a == b)
             {
@@ -278,7 +278,7 @@ namespace Lab4
 
         public double[] Task12(double[] raw)
         {
-            double[] restored = null; // Добавлена фигурная скобка
+            double[] restored = null; 
             // code here
             if (raw != null && raw.Length >= 3)
             {
@@ -315,6 +315,7 @@ namespace Lab4
         }
     }
 }
+
 
 
 
