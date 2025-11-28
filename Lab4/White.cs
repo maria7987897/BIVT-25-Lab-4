@@ -81,9 +81,7 @@ namespace Lab4
         
         public void Task4(int[] array)
         {
-
             // code here
-
             if (array != null && array.Length > 0)
             {
                 int maxIndex = 0;
@@ -97,7 +95,11 @@ namespace Lab4
             // end
 
         }
-@@ -43,7 +96,20 @@ public int Task5(int[] array, int P)
+
+
+
+        
+        public int Task5(int[] array, int P)
             int index = 0;
 
             // code here
@@ -119,11 +121,17 @@ namespace Lab4
             // end
 
             return index;
-@@ -52,7 +118,25 @@ public void Task6(int[] array)
+
+
+
+
+
+
+
+        
+        public void Task6(int[] array)
         {
-
             // code here
-
             if (array != null && array.Length > 1)
             {
                 int maxIndex = 0;
@@ -132,7 +140,6 @@ namespace Lab4
                     if (array[i] > array[maxIndex])
                         maxIndex = i;
                 }
-
                 if (maxIndex > 0)
                 {
                     for (int i = 0; i < maxIndex - 1; i += 2)
@@ -146,9 +153,13 @@ namespace Lab4
             // end
 
         }
-@@ -61,6 +145,29 @@ public int[] Task7(int[] array)
-            int[] answer = null;
 
+
+
+
+        
+        public int[] Task7(int[] array)
+            int[] answer = null;
             // code here
             if (array != null)
             {
@@ -161,7 +172,6 @@ namespace Lab4
                         count++;
 
                     }
-
                 }
                 answer = new int[count];
                 int index = 0;
@@ -173,14 +183,11 @@ namespace Lab4
                     }
                 }
             }
-
             // end
 
-@@ -70,7 +177,21 @@ public void Task8(int[] array)
+        public void Task8(int[] array)
         {
-
             // code here
-
             int n = array.Length;
             for (int i = 0; i < n - 1; i++)
             {
@@ -199,10 +206,10 @@ namespace Lab4
             // end
 
         }
-@@ -79,6 +200,16 @@ public void Task9(int[] array)
 
+        
+        public void Task9(int[] array)
             // code here
-
             {
                 int tepm, n = array.Length;
                 for (int i = 0; i < n / 2; i++)
@@ -210,17 +217,17 @@ namespace Lab4
                     tepm = array[i];
                     array[i] = array[n - i - 1];
                     array[n - i - 1] = tepm;
-
                 }
             }
             // end
 
         }
-@@ -87,7 +218,59 @@ public int[] Task10(int[] A, int[] B)
+
+
+        
+        public int[] Task10(int[] A, int[] B)
             int[] C = null;
-
             // code here
-
             if (A == null && B == null)
             {
                 C = new int[0];
@@ -277,11 +284,14 @@ namespace Lab4
             // end
 
             return C;
-@@ -97,7 +280,19 @@ public double[] Task11(double a, double b, int n)
+
+
+
+
+        
+        public double[] Task11(double a, double b, int n)
             double[] array = null;
-
             // code here
-
             if (n == 1 && a == b)
             {
                 array = new double[] { a };
@@ -298,15 +308,17 @@ namespace Lab4
             // end
 
             return array;
-@@ -108,10 +303,43 @@ public double[] Task12(double[] raw)
+
+
+
+
+        
+        public double[] Task12(double[] raw)
             double[] restored = null;
-
             // code here
-
             if (raw != null && raw.Length >= 3)
             {
                 restored = new double[raw.Length];
-
 
                 for (int i = 0; i < raw.Length; i++)
                 {
@@ -343,6 +355,7 @@ namespace Lab4
     }
 }
 }
+
 
 
 
