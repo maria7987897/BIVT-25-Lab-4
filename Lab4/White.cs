@@ -2,28 +2,26 @@ namespace Lab4
 {
     public class White
     {
-    public double Task1(int[] vector)
-    {
-        double length = 0;
-
-        // code here
-        if (vector == null)
-            return 0;
-        for (int i = 0; i < vector.Length; i++)
+        public double Task1(int[] vector)
         {
-            length += vector[i] * vector[i];
+            double length = 0;
+
+            // code here
+            if (vector == null)
+                return 0;
+            for (int i = 0; i < vector.Length; i++)
+            {
+                length += vector[i] * vector[i];
+            }
+            length = Math.Sqrt(length);
+            // end
+
+            return length; // Добавлен return
         }
-        length = Math.Sqrt(length);
-        // end
 
-
-
-
-        
-
-        
-    public int Task2(int[] array, int P, int Q)
-            int count = 0;
+        public int Task2(int[] array, int P, int Q)
+        {
+            int count = 0; // Добавлена фигурная скобка
             // code here
             int amin = Math.Min(Q, P);
             int amax = Math.Max(Q, P);
@@ -36,12 +34,9 @@ namespace Lab4
             }
             // end
             return count;
+        }
 
-
-
-
-        
-    public void Task3(int[] array)
+        public void Task3(int[] array)
         {
             // code here
             if (array != null && array.Length > 1)
@@ -73,12 +68,6 @@ namespace Lab4
             // end
         }
 
-
-
-
-
-
-        
         public void Task4(int[] array)
         {
             // code here
@@ -93,14 +82,11 @@ namespace Lab4
                 array[maxIndex] = maxIndex;
             }
             // end
-
         }
 
-
-
-        
         public int Task5(int[] array, int P)
-            int index = 0;
+        {
+            int index = 0; // Добавлена фигурная скобка
 
             // code here
 
@@ -114,21 +100,13 @@ namespace Lab4
                         index = i;
                         break;
                     }
-
                 }
-
             }
             // end
 
             return index;
+        }
 
-
-
-
-
-
-
-        
         public void Task6(int[] array)
         {
             // code here
@@ -151,31 +129,25 @@ namespace Lab4
                 }
             }
             // end
-
         }
 
-
-
-
-        
         public int[] Task7(int[] array)
-            int[] answer = null;
+        {
+            int[] answer = null; // Добавлена фигурная скобка
             // code here
             if (array != null)
             {
                 int count = 0;
                 for (int i = 0; i < array.Length; i++)
                 {
-
                     if (array[i] >= 0)
                     {
                         count++;
-
                     }
                 }
                 answer = new int[count];
                 int index = 0;
-                for (int i = 0;i < array.Length; i++)
+                for (int i = 0; i < array.Length; i++)
                 {
                     if (array[i] >= 0)
                     {
@@ -184,6 +156,9 @@ namespace Lab4
                 }
             }
             // end
+
+            return answer; // Добавлен return
+        }
 
         public void Task8(int[] array)
         {
@@ -204,29 +179,24 @@ namespace Lab4
                 (array[i], array[imin]) = (array[imin], array[i]);
             }
             // end
-
         }
 
-        
         public void Task9(int[] array)
+        {
             // code here
+            int tepm, n = array.Length;
+            for (int i = 0; i < n / 2; i++)
             {
-                int tepm, n = array.Length;
-                for (int i = 0; i < n / 2; i++)
-                {
-                    tepm = array[i];
-                    array[i] = array[n - i - 1];
-                    array[n - i - 1] = tepm;
-                }
+                tepm = array[i];
+                array[i] = array[n - i - 1];
+                array[n - i - 1] = tepm;
             }
             // end
-
         }
 
-
-        
         public int[] Task10(int[] A, int[] B)
-            int[] C = null;
+        {
+            int[] C = null; // Добавлена фигурная скобка
             // code here
             if (A == null && B == null)
             {
@@ -254,7 +224,6 @@ namespace Lab4
                 int index = 0;
                 int minLength = A.Length < B.Length ? A.Length : B.Length;
 
-
                 for (int i = 0; i < minLength; i++)
                 {
                     C[index] = A[i];
@@ -262,7 +231,6 @@ namespace Lab4
                     C[index] = B[i];
                     index++;
                 }
-
 
                 if (A.Length > minLength)
                 {
@@ -284,13 +252,11 @@ namespace Lab4
             // end
 
             return C;
+        }
 
-
-
-
-        
         public double[] Task11(double a, double b, int n)
-            double[] array = null;
+        {
+            double[] array = null; // Добавлена фигурная скобка
             // code here
             if (n == 1 && a == b)
             {
@@ -308,13 +274,11 @@ namespace Lab4
             // end
 
             return array;
+        }
 
-
-
-
-        
         public double[] Task12(double[] raw)
-            double[] restored = null;
+        {
+            double[] restored = null; // Добавлена фигурная скобка
             // code here
             if (raw != null && raw.Length >= 3)
             {
@@ -325,18 +289,15 @@ namespace Lab4
                     restored[i] = raw[i];
                 }
 
-
                 if (restored[0] == -1.0 && restored[1] != -1.0 && restored[raw.Length - 1] != -1.0)
                 {
                     restored[0] = (restored[1] + restored[raw.Length - 1]) / 2.0;
                 }
 
-
                 if (restored[raw.Length - 1] == -1.0 && restored[0] != -1.0 && restored[raw.Length - 2] != -1.0)
                 {
                     restored[raw.Length - 1] = (restored[0] + restored[raw.Length - 2]) / 2.0;
                 }
-
 
                 for (int i = 1; i < raw.Length - 1; i++)
                 {
@@ -353,7 +314,6 @@ namespace Lab4
             return restored;
         }
     }
-}
 }
 
 
